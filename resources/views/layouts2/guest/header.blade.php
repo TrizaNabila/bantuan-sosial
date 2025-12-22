@@ -25,7 +25,7 @@
              style="height: 70px; width: auto;" class="me-2">
 
         <h1 class="fw-bold text-primary m-0">
-            Chari<span class="text-white">Team</span>
+            Bantuan<span class="text-white">Sosial</span>
         </h1>
     </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
