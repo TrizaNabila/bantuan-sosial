@@ -3,8 +3,8 @@
     <!-- Top Bar -->
     <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
         <div class="col-lg-6 px-5 text-start">
-            <small><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-            <small class="ms-4"><i class="fa fa-envelope me-2"></i>info@example.com</small>
+            <small><i class="fa fa-map-marker-alt me-2"></i>Rowo Sari, Rumbai</small>
+            <small class="ms-4"><i class="fa fa-envelope me-2"></i>abing25@gmail.com</small>
         </div>
         <div class="col-lg-6 px-5 text-end">
             <small>Follow us:</small>
