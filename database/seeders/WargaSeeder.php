@@ -2,31 +2,30 @@
 
 namespace Database\Seeders;
 
-use Faker\Factory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 class WargaSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
-        $faker = Factory::create('id_ID');
-
-        foreach (range(1, 100) as $index) {
-            DB::table('warga')->insert([
-                'no_ktp'        => $faker->unique()->numerify('################'),
-                'nama'          => $faker->name,
-                'jenis_kelamin' => $faker->randomElement(['L', 'P']),
-                'agama'         => $faker->randomElement(['Islam', 'Kristen', 'Katolik', 'Hindu', 'Buddha', 'Konghucu']),
-                'pekerjaan'     => $faker->jobTitle,
-                'telp'          => $faker->phoneNumber,
-                'email'         => $faker->unique()->safeEmail,
-                'created_at'    => now(),
-                'updated_at'    => now(),
-            ]);
-        }
+        DB::table('warga')->insert([
+            [
+                'warga_id' => 1,
+                'nama_warga' => 'Budi Santoso',
+                'nik' => '3271010101010001',
+                'alamat' => 'Jl. Merdeka No.1',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'warga_id' => 2,
+                'nama_warga' => 'Siti Aminah',
+                'nik' => '3271010101010002',
+                'alamat' => 'Jl. Sudirman No.2',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        ]);
     }
 }

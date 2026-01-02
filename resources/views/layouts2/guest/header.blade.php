@@ -62,6 +62,14 @@
     </a>
 </li>
 
+{{-- 🔽 TAMBAHAN MENU PENERIMA BANTUAN --}}
+<li class="nav-item {{ request()->routeIs('penerima-bantuan.*') ? 'active' : '' }}">
+    <a href="{{ route('penerima-bantuan.index') }}" class="nav-link d-flex align-items-center gap-2">
+        <i class="fa fa-hand-holding-heart"></i>
+        <span>Penerima Bantuan</span>
+    </a>
+</li>
+
 <li class="nav-item {{ request()->routeIs('verifikasi') ? 'active' : '' }}">
     <a href="{{ route('verifikasi.index') }}" class="nav-link d-flex align-items-center gap-2">
         <i class="fa fa-check-circle"></i>

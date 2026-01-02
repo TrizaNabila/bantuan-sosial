@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\DataWargaController;
 use App\Http\Controllers\ProgramBantuanController;
+use App\Http\Controllers\PenerimaBantuanController;
 use App\Http\Controllers\PendaftarBantuanController;
 
 // Route login
@@ -159,3 +160,5 @@ Route::get('/about', function () {
 
 // route logout (ganda tetap dipertahankan)
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::resource('penerima-bantuan', PenerimaBantuanController::class);
