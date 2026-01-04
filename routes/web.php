@@ -7,6 +7,7 @@ use App\Http\Controllers\DataWargaController;
 use App\Http\Controllers\ProgramBantuanController;
 use App\Http\Controllers\PenerimaBantuanController;
 use App\Http\Controllers\PendaftarBantuanController;
+use App\Http\Controllers\RiwayatPenyaluranBantuanController;
 
 // Route login
 Route::get('/auth', [AuthController::class, 'index']);
@@ -162,3 +163,9 @@ Route::get('/about', function () {
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::resource('penerima-bantuan', PenerimaBantuanController::class);
+
+
+Route::resource(
+    'riwayat-penyaluran',
+    RiwayatPenyaluranBantuanController::class
+);
